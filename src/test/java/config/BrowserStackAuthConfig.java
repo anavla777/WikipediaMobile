@@ -1,0 +1,18 @@
+package config;
+
+import org.aeonbits.owner.Config;
+
+@Config.LoadPolicy(Config.LoadType.MERGE)
+@Config.Sources({
+        "system:properties",
+        "classpath:config/browserStackAuth.properties",
+        "file:~/browserStackAuth.properties",
+        "file:./browserStackAuth.properties"
+})
+public interface BrowserStackAuthConfig extends Config {
+    @Key("browserStackUser")
+    String bsLogin();
+
+    @Key("browserStackPassword")
+    String bsPassword();
+}
