@@ -144,7 +144,7 @@ gradle clean test -DdeviceHost=real
 Another parameters in real.properties also can be configured
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [report](https://jenkins.autotests.cloud/job/27-anavla777-twitch-tests/allure/)</a>
+## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [report](https://jenkins.autotests.cloud/job/27-anavla777-wikipediaMobile-tests/allure/)</a>
 ___
 
 ### *Test run graphs*
