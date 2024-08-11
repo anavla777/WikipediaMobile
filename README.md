@@ -63,10 +63,10 @@ ____
 - [x] Mobile: Wikipedia app - Successful onboarding completion
 ____
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Building"></a>Building in [Jenkins](https://jenkins.autotests.cloud/job/C27-anavla777-unit14-TwitchTests/)</a>
+## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/></a><a name="Building"></a>Building in [Jenkins](https://jenkins.autotests.cloud/job/27-anavla777-wikipediaMobile-tests/)</a>
 ____
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/27-anavla777-wikipediaMobile-tests"><img src="media/screenshots/JenkinsBuild.PNG" alt="Jenkins" width="950"/></a>  
+<img src="media/screenshots/JenkinsBuild.PNG" alt="Jenkins" width="950"/>  
 </p>
 Jenkins doesn't contain any parameters , except auth property files, just paste your own auth data and simply run:
 
