@@ -193,5 +193,5 @@ ____
 ## <img alt="Selenoid" height="25" src="media/logo/Browserstack.svg" width="25"/></a> Example of test execution in Browserstack
 ____
 <p align="center">
-<img title="Browserstack Video" src="media/video/Browserstack.gif" width="550" height="350"  alt="video">   
+<img title="Browserstack Video" src="media/video/Browserstack.gif" alt="video">   
 </p>
