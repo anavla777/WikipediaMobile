@@ -15,7 +15,7 @@ import pages.MainPage;
 public class SearchArticleTests extends TestBaseMobile {
     private static final String query = "Selenium";
 
-    @DisplayName("Wikipedia app - Find article by search query")
+    @DisplayName("Mobile: Wikipedia app - Find article by search query")
     @Test
     void searchArticleTest() {
         firstPage.skipOnboarding();
