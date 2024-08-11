@@ -42,6 +42,5 @@ out/
 gradle/wrapper/*
 src/test/resources/config/auth.properties
 src/test/resources/config/browserStackAuth.properties
-resources/
 gradlew
 gradlew.bat

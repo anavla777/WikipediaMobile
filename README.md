@@ -42,15 +42,15 @@ ____
 
 - [x] `IntelliJ IDEA` - IDE, used for project development
 - [x] `Java` - Project programming language
-- [x] `Gradle` - project builder
+- [x] `Gradle` - Project builder
 - [x] `Junit5` - Test framework
 - [x] `Appium` - Mobile testing framework
-- [x] `Browserstack` - cloud platform with remote access to mobile devices
+- [x] `Browserstack` - Cloud platform with remote access to mobile devices
 - [x] `Android Studio` - IDE for mobile device emulation
 - [x] `Jenkins` - CI/CD for remote test runs
 - [x] `Allure Report` - Test reporting tool
 - [x] `Allure TestOps` - Test Management tool
-- [x] `Telegram` - Messanger for test report notifications
+- [x] `Telegram` - Messenger for test report notifications
 - [x] `Jira` - Bugtracker system
 
 ____
