@@ -69,9 +69,10 @@ ____
 <a href="https://jenkins.autotests.cloud/job/27-anavla777-wikipediaMobile-tests"><img src="media/screenshots/JenkinsBuild.PNG" alt="Jenkins" width="950"/></a>  
 </p>
 Jenkins doesn't contain any parameters , except auth property files, just paste your own auth data and simply run:
+
 ```bash
 clean test
-```
+  ```
 
 <a id="console"></a>
 ## Launch commands
