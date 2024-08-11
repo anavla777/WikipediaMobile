@@ -147,13 +147,13 @@ ___
 ## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [report](https://jenkins.autotests.cloud/job/27-anavla777-twitch-tests/allure/)</a>
 ___
 
-### *Report main page*
+### *Test run graphs*
 
 <p align="center">  
 <img title="Allure Overview Dashboard" src="media/screenshots/AllureMain.PNG" width="850" alt="">  
 </p>  
 
-### *Graphs*
+### *Detailed test run report*
 
   <p align="center">  
 <img title="Allure Graphs" src="media/screenshots/Graphs.PNG" width="850" alt="">
@@ -161,7 +161,7 @@ ___
 
 ---
 <a id="testops"></a>
-## <b><a target="_blank" href="https://allure.autotests.cloud/project/4333">Allure TestOps</a></b> Integration
+## <b><a target="_blank" href="https://allure.autotests.cloud/project/4371">Allure TestOps</a></b> Integration
 ___
 >Test run graphs
 >
@@ -172,7 +172,7 @@ ___
 <img src="media/screenshots/TestOpsTests.PNG"> 
 
 ---
-<b><a id="jira" target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1316">Jira</a></b> Integration
+<b><a id="jira" target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1319">Jira</a></b> Integration
 ---
 >Jira task
 >
