@@ -18,7 +18,7 @@ ____
 ____
 ## Main project features
 - Project contains mobile tests
-- Ability to launch on emulator or ob Browserstack remote device
+- Ability to launch on emulator or on Browserstack remote device
 - Remote launch via Jenkins with Allure report and Telegram notification
 ---
 <a id="tools"></a>
