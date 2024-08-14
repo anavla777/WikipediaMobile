@@ -14,22 +14,22 @@ public class OnboardingTests extends TestBaseMobile {
     @DisplayName("Mobile: Wikipedia app - Successful onboarding completion")
     @Test
     void onboardingTest() {
-        firstOnboardingPage.checkTextOnAddLanguageButton()
+        firstOnboardingScreen.checkTextOnAddLanguageButton()
                 .checkSkipButtonOnFirstPage()
                 .clickContinueButtonOnFirstPage();
 
-        secondOnboardingPage.checkPrimaryTextonSecondPage()
+        secondOnboardingScreen.checkPrimaryTextonSecondPage()
                 .checkSkipButtonOnSecondPage()
                 .clickOnContinueButtonOnSecondPage();
 
-        thirdOnboardingPage.checkPrimaryTextonThirdPage()
+        thirdOnboardingScreen.checkPrimaryTextonThirdPage()
                 .clickOnContinueButtonOnThirdPage();
 
-        lastOnboardingPage.checkPrimaryTextOnLastPage()
+        lastOnboardingScreen.checkPrimaryTextOnLastPage()
                 .checkAccessibilityOfDoneButtonOnLastPage()
                 .navigateToMainPage();
 
-        mainPage.checkAccessibilityOfSearchBar()
+        mainScreen.checkAccessibilityOfSearchBar()
                 .checkVisibilityOfNewsFeed();
     }
 }

@@ -1,4 +1,4 @@
-package pages;
+package screens;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class FirstOnboardingPage {
+public class FirstOnboardingScreen {
 
     private static final SelenideElement
             forwardButtonOnFirstPage = $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
@@ -16,7 +16,7 @@ public class FirstOnboardingPage {
 
 
     @Step("Check that add language button is clickable and has correct text")
-    public FirstOnboardingPage checkTextOnAddLanguageButton() {
+    public FirstOnboardingScreen checkTextOnAddLanguageButton() {
         addLanguageButton.shouldBe(visible);
         addLanguageButton.shouldBe(clickable);
         addLanguageButton.shouldHave(text("Add or edit languages"));
@@ -29,7 +29,7 @@ public class FirstOnboardingPage {
     }
 
     @Step("Check accessibility of Skip button")
-    public FirstOnboardingPage checkSkipButtonOnFirstPage() {
+    public FirstOnboardingScreen checkSkipButtonOnFirstPage() {
         skipButton.shouldBe(visible);
         skipButton.shouldBe(clickable);
         skipButton.shouldHave(text("Skip"));

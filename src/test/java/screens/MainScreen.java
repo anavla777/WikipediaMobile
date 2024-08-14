@@ -1,4 +1,4 @@
-package pages;
+package screens;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class MainPage {
+public class MainScreen {
     private final SelenideElement
             searchContainer = $(id("org.wikipedia.alpha:id/search_container")),
             searchBar = $(id("org.wikipedia.alpha:id/search_src_text")),
@@ -28,7 +28,7 @@ public class MainPage {
             searchResults = $$(id("org.wikipedia.alpha:id/page_list_item_title"));
 
     @Step("Check that search bar is visible")
-    public MainPage checkAccessibilityOfSearchBar() {
+    public MainScreen checkAccessibilityOfSearchBar() {
         searchContainer.shouldBe(visible);
         return this;
     }
@@ -40,7 +40,7 @@ public class MainPage {
     }
 
     @Step("Enter search query")
-    public MainPage enterSearchQuery(String query) {
+    public MainScreen enterSearchQuery(String query) {
         searchContainer.click();
         searchBar.setValue(query);
         return this;
@@ -53,19 +53,19 @@ public class MainPage {
     }
 
     @Step("Open menu")
-    public MainPage openMenu() {
+    public MainScreen openMenu() {
         menu.click();
         return this;
     }
 
     @Step("Open login form")
-    public MainPage openLoginForm() {
+    public MainScreen openLoginForm() {
         loginFormLink.click();
         return this;
     }
 
     @Step("Login with existing account")
-    public MainPage login(String username, String password) {
+    public MainScreen login(String username, String password) {
         loginButton.click();
         usernameField.type(username);
         passwordField.type(password);
@@ -79,7 +79,7 @@ public class MainPage {
         accountLabel.shouldHave(text(username));
     }
 
-    public MainPage disablePushes() {
+    public MainScreen disablePushes() {
         disablePush.click();
         return this;
     }

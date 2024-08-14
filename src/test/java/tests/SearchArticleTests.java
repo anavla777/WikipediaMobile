@@ -16,8 +16,8 @@ public class SearchArticleTests extends TestBaseMobile {
     @DisplayName("Mobile: Wikipedia app - Find article by search query")
     @Test
     void searchArticleTest() {
-        firstOnboardingPage.skipOnboarding();
-        mainPage.enterSearchQuery(query)
+        firstOnboardingScreen.skipOnboarding();
+        mainScreen.enterSearchQuery(query)
                 .verifyArticleName(query);
     }
 }

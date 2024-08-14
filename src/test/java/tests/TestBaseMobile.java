@@ -8,25 +8,25 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import pages.*;
+import screens.*;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBaseMobile {
 
-    public final FirstOnboardingPage firstOnboardingPage;
-    public final SecondOnboardingPage secondOnboardingPage;
-    public final ThirdOnboardingPage thirdOnboardingPage;
-    public final LastOnboardingPage lastOnboardingPage;
-    public final MainPage mainPage;
+    public final FirstOnboardingScreen firstOnboardingScreen;
+    public final SecondOnboardingScreen secondOnboardingScreen;
+    public final ThirdOnboardingScreen thirdOnboardingScreen;
+    public final LastOnboardingScreen lastOnboardingScreen;
+    public final MainScreen mainScreen;
 
     public TestBaseMobile() {
-        firstOnboardingPage = new FirstOnboardingPage();
-        secondOnboardingPage = new SecondOnboardingPage();
-        thirdOnboardingPage = new ThirdOnboardingPage();
-        lastOnboardingPage = new LastOnboardingPage();
-        mainPage = new MainPage();
+        firstOnboardingScreen = new FirstOnboardingScreen();
+        secondOnboardingScreen = new SecondOnboardingScreen();
+        thirdOnboardingScreen = new ThirdOnboardingScreen();
+        lastOnboardingScreen = new LastOnboardingScreen();
+        mainScreen = new MainScreen();
     }
 
     @BeforeAll

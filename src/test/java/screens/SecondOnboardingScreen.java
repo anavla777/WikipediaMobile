@@ -1,4 +1,4 @@
-package pages;
+package screens;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class SecondOnboardingPage {
+public class SecondOnboardingScreen {
     private static final SelenideElement
             continueButtonOnSecondPage = $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
             primaryText = $(id("org.wikipedia.alpha:id/primaryTextView")),
@@ -15,7 +15,7 @@ public class SecondOnboardingPage {
 
 
     @Step("Check Text on PrimaryText label")
-    public SecondOnboardingPage checkPrimaryTextonSecondPage() {
+    public SecondOnboardingScreen checkPrimaryTextonSecondPage() {
         primaryText.shouldHave(text("New ways to explore"));
         return this;
     }
@@ -26,7 +26,7 @@ public class SecondOnboardingPage {
     }
 
     @Step("Check accessibility of Skip button on second page")
-    public SecondOnboardingPage checkSkipButtonOnSecondPage() {
+    public SecondOnboardingScreen checkSkipButtonOnSecondPage() {
         skipButton.shouldBe(visible);
         skipButton.shouldBe(clickable);
         skipButton.shouldHave(text("Skip"));
