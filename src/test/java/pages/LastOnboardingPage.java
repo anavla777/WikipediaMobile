@@ -7,14 +7,14 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class LastPage {
+public class LastOnboardingPage {
 
     private static final SelenideElement
             primaryText = $(id("org.wikipedia.alpha:id/primaryTextView")),
             doneButton = $(id("org.wikipedia.alpha:id/fragment_onboarding_done_button"));
 
     @Step("Check accessibility Get Started button on last page")
-    public LastPage checkAccessibilityOfDoneButtonOnLastPage() {
+    public LastOnboardingPage checkAccessibilityOfDoneButtonOnLastPage() {
         doneButton.shouldBe(visible);
         doneButton.shouldBe(clickable);
         doneButton.shouldHave(text("Get started"));
@@ -22,7 +22,7 @@ public class LastPage {
     }
 
     @Step("Check Text on PrimaryText label")
-    public LastPage checkPrimaryTextOnLastPage() {
+    public LastOnboardingPage checkPrimaryTextOnLastPage() {
         primaryText.shouldHave(text("Data & Privacy"));
         return this;
     }

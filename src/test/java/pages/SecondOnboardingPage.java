@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class SecondPage {
+public class SecondOnboardingPage {
     private static final SelenideElement
             continueButtonOnSecondPage = $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
             primaryText = $(id("org.wikipedia.alpha:id/primaryTextView")),
@@ -15,7 +15,7 @@ public class SecondPage {
 
 
     @Step("Check Text on PrimaryText label")
-    public SecondPage checkPrimaryTextonSecondPage() {
+    public SecondOnboardingPage checkPrimaryTextonSecondPage() {
         primaryText.shouldHave(text("New ways to explore"));
         return this;
     }
@@ -26,7 +26,7 @@ public class SecondPage {
     }
 
     @Step("Check accessibility of Skip button on second page")
-    public SecondPage checkSkipButtonOnSecondPage() {
+    public SecondOnboardingPage checkSkipButtonOnSecondPage() {
         skipButton.shouldBe(visible);
         skipButton.shouldBe(clickable);
         skipButton.shouldHave(text("Skip"));

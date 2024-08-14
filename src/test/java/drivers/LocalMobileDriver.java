@@ -20,7 +20,7 @@ import java.net.URL;
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 public class LocalMobileDriver implements WebDriverProvider {
-    static LocalMobileDriverConfig localMobileDriverConfig = ConfigFactory.create(
+    static final LocalMobileDriverConfig localMobileDriverConfig = ConfigFactory.create(
             LocalMobileDriverConfig.class,
             System.getProperties()
     );

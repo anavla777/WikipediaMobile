@@ -18,7 +18,7 @@ public class LoginTests extends TestBaseMobile {
     void successfulLoginTest() {
         final AuthConfig authConfig = ConfigFactory.create(AuthConfig.class, System.getProperties());
 
-        firstPage.skipOnboarding();
+        firstOnboardingPage.skipOnboarding();
         mainPage.openMenu()
                 .openLoginForm()
                 .login(authConfig.username(), authConfig.password())

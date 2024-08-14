@@ -15,17 +15,17 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class TestBaseMobile {
 
-    public final FirstPage firstPage;
-    public final SecondPage secondPage;
-    public final ThirdPage thirdPage;
-    public final LastPage lastPage;
+    public final FirstOnboardingPage firstOnboardingPage;
+    public final SecondOnboardingPage secondOnboardingPage;
+    public final ThirdOnboardingPage thirdOnboardingPage;
+    public final LastOnboardingPage lastOnboardingPage;
     public final MainPage mainPage;
 
     public TestBaseMobile() {
-        firstPage = new FirstPage();
-        secondPage = new SecondPage();
-        thirdPage = new ThirdPage();
-        lastPage = new LastPage();
+        firstOnboardingPage = new FirstOnboardingPage();
+        secondOnboardingPage = new SecondOnboardingPage();
+        thirdOnboardingPage = new ThirdOnboardingPage();
+        lastOnboardingPage = new LastOnboardingPage();
         mainPage = new MainPage();
     }
 

@@ -5,8 +5,6 @@ import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pages.FirstPage;
-import pages.MainPage;
 
 @Tag("mobile")
 @Owner("Vladislav Ananenkov")
@@ -18,7 +16,7 @@ public class SearchArticleTests extends TestBaseMobile {
     @DisplayName("Mobile: Wikipedia app - Find article by search query")
     @Test
     void searchArticleTest() {
-        firstPage.skipOnboarding();
+        firstOnboardingPage.skipOnboarding();
         mainPage.enterSearchQuery(query)
                 .verifyArticleName(query);
     }

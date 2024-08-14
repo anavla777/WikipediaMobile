@@ -20,15 +20,6 @@ public interface BrowserStackDriverConfig extends Config {
     @DefaultValue("13.0")
     String browserstackPlatform();
 
-    @DefaultValue("Appium Java Project")
-    String browserstackProject();
-
-    @DefaultValue("browserstack-build-1")
-    String browserstackBuild();
-
-    @DefaultValue("Wikipedia app tests")
-    String browserstackName();
-
     String automationName();
 
     String platformName();
