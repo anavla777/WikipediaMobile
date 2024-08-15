@@ -77,6 +77,7 @@ clean test
 <a id="console"></a>
 ## Launch commands
 
+---
 <details>
   <summary>Project launch details</summary>
 Project allows to run tests locally
