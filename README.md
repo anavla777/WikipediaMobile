@@ -77,8 +77,6 @@ clean test
 <a id="console"></a>
 ## Launch commands
 
----
-
 <details>
   <summary>Project launch details</summary>
 Project allows to run tests locally
@@ -146,7 +144,6 @@ gradle clean test -DdeviceHost=real
 Another parameters in real.properties also can be configured
 </details>
 
-___
 <a id="allure"></a>
 ## <img alt="Allure" height="25" src="media/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [report](https://jenkins.autotests.cloud/job/27-anavla777-wikipediaMobile-tests/allure/)</a>
 ___
